@@ -1,0 +1,13 @@
+---
+layout: home
+---
+<h1>Recipes</h1>
+
+<ul>
+  {% for recipe in site.recipes %}
+    <li>
+      <h2><a href="{{ recipe.url }}">{{ recipe.title }}</a></h2>
+      <!-- {{ recipe.excerpt }} -->
+    </li>
+  {% endfor %}
+</ul>
