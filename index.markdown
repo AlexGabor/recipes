@@ -6,7 +6,7 @@ layout: home
 <div class="recipe-list">
   {% for recipe in site.recipes %}
     <p class="recipe-preview">
-      <a href="{{ recipe.url }}">{{ recipe.title }}</a>
+      <a href="{{ recipe.url | relative_url }}">{{ recipe.title }}</a>
       <!-- {{ recipe.excerpt }} -->
     </p>
   {% endfor %}
