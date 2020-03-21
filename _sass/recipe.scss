@@ -1,0 +1,22 @@
+.recipe {
+    font-family: 'Baloo Da 2', sans-serif;
+    font-weight: 400;
+
+    img {        
+        width: 100%;
+        height: auto;
+        max-height: 384PX;
+        object-fit: cover;
+    }
+
+    ul {
+        color: #ff5722;
+        list-style-type: none;
+    }
+
+    ol {
+        li {
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -3,11 +3,11 @@ layout: home
 ---
 <h1>Recipes</h1>
 
-<ul>
+<div class="recipe-list">
   {% for recipe in site.recipes %}
-    <li>
-      <h2><a href="{{ recipe.url }}">{{ recipe.title }}</a></h2>
+    <p class="recipe-preview">
+      <a href="{{ recipe.url }}">{{ recipe.title }}</a>
       <!-- {{ recipe.excerpt }} -->
-    </li>
+    </p>
   {% endfor %}
-</ul>
+</div>
